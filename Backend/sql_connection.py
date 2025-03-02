@@ -1,14 +1,10 @@
 import mysql.connector
 
-conn = mysql.connector.connect(
-    host="127.0.0.1",  # Use 127.0.0.1 instead of 'localhost'
-    user="gigamart",
-    password="root",
-    database="grocery_store",
-    port=8889  # MAMP's default MySQL port
-)
+__conn =None
 
-if conn.is_connected():
-    print("Connected to MySQL database!")
-
-conn.close()
+def get_sql_connection():
+    global __conn
+    if __conn is None:
+        __conn = mysql.connector.connect(user='gigamart'
+        ,password='root',host='127.0.0.1',database='grocery_store',port=8889 )
+    return __conn
