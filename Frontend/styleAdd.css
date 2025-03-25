@@ -1,4 +1,44 @@
 h2 {
     text-align: center;
     justify-content: center;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+#product-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#product-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(23, 110, 78);
+}
+
+#product-form input {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-color: rgb(207, 162, 14);
+}
+
+#product-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#product-form button:hover {
+    background-color: #45a049;
 }
